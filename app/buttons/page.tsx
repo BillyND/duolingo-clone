@@ -1,7 +1,11 @@
 import React from "react";
 
-function ButtonsPage() {
-  return <div>Button Page</div>;
+function ButtonPages() {
+  return (
+    <div>
+      <button>hello</button>
+    </div>
+  );
 }
 
-export default ButtonsPage;
+export default ButtonPages;

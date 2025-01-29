@@ -9,6 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        // shad-ui variants
+        destructive:
+          "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+        outline:
+          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
+        ghost: "hover:bg-accent hover:text-accent-foreground",
+        link: "text-primary underline-offset-4 hover:underline",
+
+        // Custom variants
         default:
           "bg-white text-black border-2 border-b-4 active:border-b-2 hover:bg-slate-100 hover:text-slate-500",
         primary:

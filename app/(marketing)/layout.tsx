@@ -14,7 +14,6 @@ function MarketingLayout({ children }: { children: React.ReactNode }) {
       <main className="flex-1 flex justify-center items-center">
         {children}
       </main>
-      hello
       {!isMobile && <Footer />}
     </div>
   );

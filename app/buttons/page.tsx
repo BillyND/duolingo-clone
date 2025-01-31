@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
 
-function ButtonPages() {
+function ButtonsPage() {
   return (
     <div className="p-4 flex flex-col gap-4">
       <Button variant="default">Default</Button>
@@ -17,4 +17,4 @@ function ButtonPages() {
   );
 }
 
-export default ButtonPages;
+export default ButtonsPage;

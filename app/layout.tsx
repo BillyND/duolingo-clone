@@ -19,7 +19,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Duolingo - Language Learning Platform",
+  title: "Duolingo - Clone",
   description: "Learn languages effectively with gamified lessons",
   keywords: ["language learning", "education", "duolingo", "courses"],
 };

@@ -4,9 +4,11 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { SignedOut } from "@clerk/clerk-react";
 import { SignInButton } from "@clerk/nextjs";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function MarketingPage() {
   const isMobile = useIsMobile();
+  const router = useRouter();
 
   return (
     <div
@@ -28,11 +30,13 @@ export default function MarketingPage() {
         <h1 className="text-3xl font-bold mb-2">
           Free, fun, and effective way to learn a language!
         </h1>
-        <div className="pt-5 flex flex-col items-center space-y-2">
-          <Button variant={"secondary"}>Get Started</Button>
+        <div className="pt-5 flex flex-col items-center space-y-2 gap-2">
+          <Button variant={"secondary"} onClick={() => router.push("/learn")}>
+            Get Started
+          </Button>
           <SignedOut>
-            <SignInButton>
-              <Button variant={"primaryOutline"}>
+            <SignInButton mode="modal" forceRedirectUrl={"/learn"}>
+              <Button variant={"secondaryOutline"}>
                 I Already Have an Account
               </Button>
             </SignInButton>

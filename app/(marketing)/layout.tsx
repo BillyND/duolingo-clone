@@ -5,7 +5,11 @@ import Header from "./header";
 import Footer from "./footer";
 import { useIsMobile } from "@/hooks/use-mobile";
 
-function MarketingLayout({ children }: { children: React.ReactNode }) {
+interface MarketingLayoutProps {
+  children: React.ReactNode;
+}
+
+function MarketingLayout({ children }: MarketingLayoutProps) {
   const isMobile = useIsMobile();
 
   return (

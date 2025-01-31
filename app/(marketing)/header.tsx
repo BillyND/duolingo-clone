@@ -1,5 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import { Skeleton } from "@/components/ui/skeleton";
+import {
+  ClerkLoaded,
+  ClerkLoading,
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,14 +25,19 @@ function Header() {
           />
         </Link>
         <div>
-          <SignedOut>
-            <SignInButton>
-              <Button variant={"secondary"}>Sign In</Button>
-            </SignInButton>
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
+          <ClerkLoading>
+            <Skeleton className="h-8 w-8 rounded-full" />
+          </ClerkLoading>
+          <ClerkLoaded>
+            <SignedOut>
+              <SignInButton mode="modal" forceRedirectUrl={"/learn"}>
+                <Button variant={"secondaryOutline"}>Sign In</Button>
+              </SignInButton>
+            </SignedOut>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </ClerkLoaded>
         </div>
       </div>
     </header>

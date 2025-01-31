@@ -1,4 +1,26 @@
+# Duolingo Clone
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Project Overview
+
+The Duolingo Clone is a language learning application inspired by the popular Duolingo platform. It aims to provide users with an interactive and engaging way to learn new languages through various exercises and challenges.
+
+## Features
+
+- Interactive language exercises
+- Progress tracking
+- User authentication
+- Responsive design
+- Multi-language support
+
+## Project Structure
+
+- `app/`: Contains the main application components and pages.
+- `components/`: Reusable UI components used throughout the application.
+- `hooks/`: Custom React hooks for managing state and logic.
+- `lib/`: Utility functions and helpers.
+- `public/`: Static assets such as images and icons.
 
 ## Getting Started
 
@@ -34,3 +56,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.

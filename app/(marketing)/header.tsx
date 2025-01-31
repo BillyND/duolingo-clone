@@ -13,9 +13,8 @@ function Header() {
             alt="Duolingo Icon"
             width={180}
             height={42}
-            className="mr-2"
+            className="prevent-copy"
           />
-          {/* <span className="text-green-600 font-bold">Duolingo</span> */}
         </Link>
         <div>
           <SignedOut>

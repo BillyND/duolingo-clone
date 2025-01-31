@@ -94,3 +94,11 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.prevent-copy {
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+}

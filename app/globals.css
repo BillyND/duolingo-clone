@@ -8,10 +8,10 @@ body {
     "Open Sans", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+html,
+body,
+:root {
+  @apply h-full;
 }
 
 @layer base {

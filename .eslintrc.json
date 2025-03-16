@@ -1,3 +1,26 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "react/no-unknown-property": "off",
+    "spellcheck/spell-checker": [
+      "off",
+      {
+        "skipWords": [
+          "svg",
+          "vi",
+          "en",
+          "es",
+          "fr",
+          "ja"
+        ],
+        "skipFiles": [
+          "flags/en.svg",
+          "flags/vi.svg",
+          "flags/es.svg",
+          "flags/fr.svg",
+          "flags/ja.svg"
+        ]
+      }
+    ]
+  }
 }
